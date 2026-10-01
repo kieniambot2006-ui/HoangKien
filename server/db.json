@@ -1,0 +1,822 @@
+{
+  "labs": [
+    {
+      "id": 1,
+      "name": "Lab A",
+      "location": "Tầng 1, Tòa A",
+      "capacity": 9,
+      "status": "active",
+      "description": "Phòng máy phục vụ học phần Lập trình web và Ứng dụng di động",
+      "floorPlan": {
+        "width": 800,
+        "height": 500,
+        "gridSize": 80,
+        "rows": 5,
+        "cols": 8
+      }
+    },
+    {
+      "id": 2,
+      "name": "Phòng máy B201",
+      "location": "Tầng 2, Tòa B",
+      "capacity": 15,
+      "status": "active",
+      "description": "Phòng máy phục vụ học phần Lập trình ứng dụng và CSDL",
+      "floorPlan": {
+        "width": 700,
+        "height": 450,
+        "gridSize": 80,
+        "rows": 5,
+        "cols": 7
+      }
+    },
+    {
+      "id": 3,
+      "name": "Phòng máy C301",
+      "location": "Tầng 3, Tòa C",
+      "capacity": 2,
+      "status": "maintenance",
+      "description": "Phòng máy đang nâng cấp hệ thống",
+      "floorPlan": {
+        "width": 880,
+        "height": 500,
+        "gridSize": 80,
+        "rows": 5,
+        "cols": 9
+      }
+    },
+    {
+      "id": 4,
+      "name": "Phòng máy D401",
+      "location": "Tầng 4, Tòa D",
+      "capacity": 4,
+      "status": "active",
+      "description": "Phòng máy phục vụ học phần Mạng máy tính",
+      "floorPlan": {
+        "width": 640,
+        "height": 420,
+        "gridSize": 80,
+        "rows": 5,
+        "cols": 7
+      }
+    }
+  ],
+  "devices": [
+    {
+      "id": 1,
+      "name": "A101-PC01",
+      "type": "desktop",
+      "labId": 1,
+      "status": "working",
+      "specification": "Intel Core i5-12400, 8GB RAM, 256GB SSD",
+      "position": {
+        "row": 0,
+        "col": 0
+      }
+    },
+    {
+      "status": "working",
+      "id": 2
+    },
+    {
+      "status": "working",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "name": "A101-PC04",
+      "type": "desktop",
+      "labId": 1,
+      "status": "working",
+      "specification": "Intel Core i5-12400, 8GB RAM, 256GB SSD",
+      "position": {
+        "row": 0,
+        "col": 3
+      }
+    },
+    {
+      "id": 5,
+      "name": "A101-PC05",
+      "type": "desktop",
+      "labId": 1,
+      "status": "working",
+      "specification": "Intel Core i5-12400, 8GB RAM, 256GB SSD",
+      "position": {
+        "row": 0,
+        "col": 7
+      }
+    },
+    {
+      "id": 6,
+      "name": "A101-PC06",
+      "type": "desktop",
+      "labId": 1,
+      "status": "working",
+      "specification": "Intel Core i5-12400, 8GB RAM, 256GB SSD",
+      "position": {
+        "row": 1,
+        "col": 0
+      }
+    },
+    {
+      "id": 7,
+      "name": "A101-PC07",
+      "type": "desktop",
+      "labId": 1,
+      "status": "working",
+      "specification": "Intel Core i5-12400, 8GB RAM, 256GB SSD",
+      "position": {
+        "row": 1,
+        "col": 1
+      }
+    },
+    {
+      "id": 8,
+      "name": "A101-PR01",
+      "type": "printer",
+      "labId": 1,
+      "status": "maintenance",
+      "specification": "Canon LBP 2900, dùng chung cho phòng A101",
+      "position": {
+        "row": 1,
+        "col": 2
+      }
+    },
+    {
+      "id": 9,
+      "name": "A101-PJ01",
+      "type": "projector",
+      "labId": 1,
+      "status": "working",
+      "specification": "Epson EB-X51 3800 ANSI",
+      "position": {
+        "row": 2,
+        "col": 7
+      }
+    },
+    {
+      "id": 10,
+      "name": "B201-PC01",
+      "type": "desktop",
+      "labId": 2,
+      "status": "working",
+      "specification": "Intel Core i7-12700, 16GB RAM, 512GB SSD",
+      "position": {
+        "row": 0,
+        "col": 0
+      }
+    },
+    {
+      "id": 11,
+      "name": "B201-PC02",
+      "type": "desktop",
+      "labId": 2,
+      "status": "working",
+      "specification": "Intel Core i7-12700, 16GB RAM, 512GB SSD",
+      "position": {
+        "row": 0,
+        "col": 1
+      }
+    },
+    {
+      "id": 12,
+      "name": "B201-PC03",
+      "type": "desktop",
+      "labId": 2,
+      "status": "error",
+      "specification": "Intel Core i7-12700, 16GB RAM, 512GB SSD",
+      "position": {
+        "row": 0,
+        "col": 2
+      }
+    },
+    {
+      "id": 13,
+      "name": "B201-PC04",
+      "type": "desktop",
+      "labId": 2,
+      "status": "working",
+      "specification": "Intel Core i7-12700, 16GB RAM, 512GB SSD",
+      "position": {
+        "row": 1,
+        "col": 0
+      }
+    },
+    {
+      "id": 14,
+      "name": "B201-PC05",
+      "type": "desktop",
+      "labId": 2,
+      "status": "working",
+      "specification": "Intel Core i7-12700, 16GB RAM, 512GB SSD",
+      "position": {
+        "row": 1,
+        "col": 1
+      }
+    },
+    {
+      "id": 15,
+      "name": "B201-LP01",
+      "type": "laptop",
+      "labId": 2,
+      "status": "working",
+      "specification": "Dell Latitude 5530, i7, 16GB RAM",
+      "position": {
+        "row": 2,
+        "col": 0
+      }
+    },
+    {
+      "id": 16,
+      "name": "B201-PJ01",
+      "type": "projector",
+      "labId": 2,
+      "status": "working",
+      "specification": "Epson EB-X51 3800 ANSI",
+      "position": {
+        "row": 0,
+        "col": 6
+      }
+    },
+    {
+      "id": 17,
+      "name": "C301-PC01",
+      "type": "desktop",
+      "labId": 3,
+      "status": "maintenance",
+      "specification": "Intel Core i5-10400, 8GB RAM, 256GB SSD",
+      "position": {
+        "row": 0,
+        "col": 0
+      }
+    },
+    {
+      "id": 18,
+      "name": "C301-PC02",
+      "type": "desktop",
+      "labId": 3,
+      "status": "maintenance",
+      "specification": "Intel Core i5-10400, 8GB RAM, 256GB SSD",
+      "position": {
+        "row": 0,
+        "col": 1
+      }
+    },
+    {
+      "id": 19,
+      "name": "D401-PC01",
+      "type": "desktop",
+      "labId": 4,
+      "status": "working",
+      "specification": "Intel Core i5-12400, 16GB RAM, 512GB SSD",
+      "position": {
+        "row": 0,
+        "col": 0
+      }
+    },
+    {
+      "id": 20,
+      "name": "D401-PC02",
+      "type": "desktop",
+      "labId": 4,
+      "status": "working",
+      "specification": "Intel Core i5-12400, 16GB RAM, 512GB SSD",
+      "position": {
+        "row": 0,
+        "col": 1
+      }
+    },
+    {
+      "id": 21,
+      "name": "D401-PC03",
+      "type": "desktop",
+      "labId": 4,
+      "status": "error",
+      "specification": "Intel Core i5-12400, 16GB RAM, 512GB SSD",
+      "position": {
+        "row": 0,
+        "col": 2
+      }
+    },
+    {
+      "id": 22,
+      "name": "D401-PC04",
+      "type": "desktop",
+      "labId": 4,
+      "status": "working",
+      "specification": "Intel Core i5-12400, 16GB RAM, 512GB SSD",
+      "position": {
+        "row": 0,
+        "col": 3
+      }
+    },
+    {
+      "name": "PC-01",
+      "type": "desktop",
+      "labId": 2,
+      "status": "working",
+      "specification": "Intel Core i3-12100, 8GB RAM, 512GB SSD",
+      "position": {
+        "row": 0,
+        "col": 0
+      },
+      "id": 63
+    },
+    {
+      "name": "PC-05",
+      "type": "desktop",
+      "labId": 2,
+      "status": "working",
+      "specification": "Intel Core i5-12400, 8GB RAM, 256GB SSD",
+      "position": {
+        "row": 0,
+        "col": 4
+      },
+      "id": 64
+    },
+    {
+      "name": "PC-02",
+      "type": "desktop",
+      "labId": 2,
+      "status": "working",
+      "specification": "Intel Core i5-13400, 16GB RAM, 512GB SSD",
+      "position": {
+        "row": 0,
+        "col": 1
+      },
+      "id": 65
+    },
+    {
+      "name": "PC-07",
+      "type": "desktop",
+      "labId": 2,
+      "status": "working",
+      "specification": "Intel Core i5-13400, 16GB RAM, 512GB SSD",
+      "position": {
+        "row": 0,
+        "col": 6
+      },
+      "id": 66
+    },
+    {
+      "name": "PC-06",
+      "type": "desktop",
+      "labId": 2,
+      "status": "working",
+      "specification": "Intel Core i3-12100, 8GB RAM, 512GB SSD",
+      "position": {
+        "row": 0,
+        "col": 5
+      },
+      "id": 67
+    },
+    {
+      "name": "PC-08",
+      "type": "desktop",
+      "labId": 2,
+      "status": "working",
+      "specification": "Intel Core i7-13700, 16GB RAM, 1TB SSD",
+      "position": {
+        "row": 1,
+        "col": 0
+      },
+      "id": 68
+    },
+    {
+      "name": "PC-10",
+      "type": "desktop",
+      "labId": 2,
+      "status": "working",
+      "specification": "Intel Core i5-12400, 8GB RAM, 256GB SSD",
+      "position": {
+        "row": 1,
+        "col": 2
+      },
+      "id": 69
+    },
+    {
+      "name": "pc32",
+      "type": "desktop",
+      "labId": 2,
+      "status": "working",
+      "specification": "Chưa cập nhật",
+      "position": {
+        "row": 0,
+        "col": 3
+      },
+      "id": 70
+    },
+    {
+      "name": "PC-21",
+      "type": "desktop",
+      "labId": 1,
+      "status": "working",
+      "specification": "Intel Core i3-12100, 8GB RAM, 512GB SSD",
+      "position": {
+        "row": 2,
+        "col": 4
+      },
+      "id": 74
+    },
+    {
+      "name": "PC-22",
+      "type": "desktop",
+      "labId": 1,
+      "status": "working",
+      "specification": "Intel Core i5-13400, 16GB RAM, 512GB SSD",
+      "position": {
+        "row": 2,
+        "col": 5
+      },
+      "id": 75
+    },
+    {
+      "name": "PC-01",
+      "type": "desktop",
+      "labId": 1,
+      "status": "working",
+      "specification": "Intel Core i3-12100, 8GB RAM, 512GB SSD",
+      "position": {
+        "row": 0,
+        "col": 0
+      },
+      "id": 76
+    },
+    {
+      "name": "PC-19",
+      "type": "desktop",
+      "labId": 1,
+      "status": "working",
+      "specification": "Intel Core i5-12400, 16GB RAM, 256GB SSD",
+      "position": {
+        "row": 2,
+        "col": 2
+      },
+      "id": 77
+    },
+    {
+      "name": "PC-20",
+      "type": "desktop",
+      "labId": 1,
+      "status": "working",
+      "specification": "Intel Core i5-12400, 8GB RAM, 256GB SSD",
+      "position": {
+        "row": 2,
+        "col": 3
+      },
+      "id": 78
+    },
+    {
+      "name": "PC-23",
+      "type": "desktop",
+      "labId": 1,
+      "status": "working",
+      "specification": "Intel Core i7-13700, 16GB RAM, 1TB SSD",
+      "position": {
+        "row": 2,
+        "col": 6
+      },
+      "id": 79
+    },
+    {
+      "name": "PC-24",
+      "type": "desktop",
+      "labId": 1,
+      "status": "working",
+      "specification": "Intel Core i5-12400, 16GB RAM, 256GB SSD",
+      "position": {
+        "row": 2,
+        "col": 7
+      },
+      "id": 80
+    },
+    {
+      "name": "PC-25",
+      "type": "desktop",
+      "labId": 1,
+      "status": "working",
+      "specification": "Intel Core i5-12400, 8GB RAM, 256GB SSD",
+      "position": {
+        "row": 3,
+        "col": 0
+      },
+      "id": 81
+    },
+    {
+      "name": "PC-26",
+      "type": "desktop",
+      "labId": 1,
+      "status": "working",
+      "specification": "Intel Core i3-12100, 8GB RAM, 512GB SSD",
+      "position": {
+        "row": 3,
+        "col": 1
+      },
+      "id": 82
+    },
+    {
+      "name": "PC-27",
+      "type": "desktop",
+      "labId": 1,
+      "status": "working",
+      "specification": "Intel Core i5-13400, 16GB RAM, 512GB SSD",
+      "position": {
+        "row": 3,
+        "col": 2
+      },
+      "id": 83
+    },
+    {
+      "name": "PC-28",
+      "type": "desktop",
+      "labId": 1,
+      "status": "working",
+      "specification": "Intel Core i7-13700, 16GB RAM, 1TB SSD",
+      "position": {
+        "row": 3,
+        "col": 3
+      },
+      "id": 84
+    },
+    {
+      "name": "PC-29",
+      "type": "desktop",
+      "labId": 1,
+      "status": "working",
+      "specification": "Intel Core i5-12400, 16GB RAM, 256GB SSD",
+      "position": {
+        "row": 3,
+        "col": 4
+      },
+      "id": 85
+    }
+  ],
+  "incidents": [
+    {
+      "status": "resolved",
+      "resolvedAt": "2026-10-01T10:24:25.614Z",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "deviceId": 12,
+      "labId": 2,
+      "description": "Màn hình bị nhấp nháy, hiển thị màu sắc không chính xác",
+      "status": "in-progress",
+      "priority": "medium",
+      "reportedBy": "Trần Thị Bình",
+      "assignedTo": "Lê Văn Cường",
+      "reportedAt": "2024-01-14T10:15:00",
+      "resolvedAt": null,
+      "note": "Đang chờ thay cáp",
+      "imageUrl": ""
+    },
+    {
+      "id": 3,
+      "deviceId": 5,
+      "labId": 1,
+      "description": "Ổ cứng bị lỗi, phát ra tiếng kêu bất thường",
+      "status": "resolved",
+      "priority": "high",
+      "reportedBy": "Phạm Minh Đức",
+      "assignedTo": "Lê Văn Cường",
+      "reportedAt": "2024-01-10T14:00:00",
+      "resolvedAt": "2024-01-11T09:30:00",
+      "note": "Đã thay SSD mới",
+      "imageUrl": ""
+    },
+    {
+      "id": 4,
+      "deviceId": 21,
+      "labId": 4,
+      "description": "Không kết nối được mạng LAN, mất Internet",
+      "status": "pending",
+      "priority": "medium",
+      "reportedBy": "Hoàng Thị Em",
+      "assignedTo": "",
+      "reportedAt": "2024-01-16T07:45:00",
+      "resolvedAt": null,
+      "note": "",
+      "imageUrl": ""
+    },
+    {
+      "id": 5,
+      "deviceId": 16,
+      "labId": 2,
+      "description": "Máy chiếu không nhận tín hiệu từ máy tính",
+      "status": "resolved",
+      "priority": "low",
+      "reportedBy": "Vũ Thị Giang",
+      "assignedTo": "Lê Văn Cường",
+      "reportedAt": "2024-01-12T13:20:00",
+      "resolvedAt": "2024-01-12T15:00:00",
+      "note": "Đã thay cáp HDMI",
+      "imageUrl": ""
+    }
+  ],
+  "bookings": [
+    {
+      "id": 1,
+      "labId": 1,
+      "date": "2024-01-17",
+      "shift": "morning",
+      "bookedBy": "TS. Nguyễn Văn A",
+      "purpose": "Thực hành Lập trình Web - Nhóm 1",
+      "status": "approved",
+      "createdAt": "2024-01-14T08:00:00"
+    },
+    {
+      "id": 2,
+      "labId": 1,
+      "date": "2024-01-17",
+      "shift": "afternoon",
+      "bookedBy": "ThS. Trần Thị B",
+      "purpose": "Thực hành Lập trình Web - Nhóm 2",
+      "status": "approved",
+      "createdAt": "2024-01-14T09:00:00"
+    },
+    {
+      "id": 3,
+      "labId": 2,
+      "date": "2024-01-17",
+      "shift": "morning",
+      "bookedBy": "TS. Lê Văn C",
+      "purpose": "Thực hành Cấu trúc dữ liệu",
+      "status": "approved",
+      "createdAt": "2024-01-15T10:00:00"
+    },
+    {
+      "id": 4,
+      "labId": 1,
+      "date": "2024-01-18",
+      "shift": "morning",
+      "bookedBy": "ThS. Phạm Minh D",
+      "purpose": "Thực hành ReactJS - Nhóm 1",
+      "status": "pending",
+      "createdAt": "2024-01-16T14:00:00"
+    },
+    {
+      "id": 5,
+      "labId": 2,
+      "date": "2024-01-18",
+      "shift": "afternoon",
+      "bookedBy": "TS. Hoàng Thị E",
+      "purpose": "Thực hành SQL Server",
+      "status": "pending",
+      "createdAt": "2024-01-16T15:30:00"
+    },
+    {
+      "labId": 1,
+      "date": "2026-09-21",
+      "shift": "afternoon",
+      "bookedBy": "Admin Hệ thống",
+      "userId": 1,
+      "purpose": "thực hành web",
+      "status": "pending",
+      "createdAt": "2026-09-20T13:36:16.630Z",
+      "id": 6
+    },
+    {
+      "labId": 2,
+      "date": "2026-09-22",
+      "shift": "afternoon",
+      "bookedBy": "Admin Hệ thống",
+      "userId": 1,
+      "purpose": "Thực hành ReactJs",
+      "status": "pending",
+      "createdAt": "2026-09-20T13:46:36.112Z",
+      "id": 8
+    },
+    {
+      "id": 9,
+      "labId": 3,
+      "date": "2026-09-22",
+      "shift": "morning",
+      "bookedBy": "TS. Lê Văn C",
+      "purpose": "Thực hành Cấu trúc dữ liệu",
+      "status": "approved",
+      "createdAt": "2026-09-21T10:00:00"
+    },
+    {
+      "status": "approved",
+      "id": 10
+    }
+  ],
+  "maintenanceLogs": [
+    {
+      "id": 1,
+      "deviceId": 5,
+      "performedBy": "Lê Văn Cường",
+      "type": "repair",
+      "description": "Thay ổ cứng HDD bằng SSD Samsung 870 EVO 256GB",
+      "parts": "SSD Samsung 870 EVO 256GB",
+      "cost": 850000,
+      "startDate": "2024-01-11T09:00:00",
+      "endDate": "2024-01-11T09:30:00",
+      "status": "completed",
+      "notes": "Ổ cứng cũ hư"
+    },
+    {
+      "id": 2,
+      "deviceId": 16,
+      "performedBy": "Lê Văn Cường",
+      "type": "repair",
+      "description": "Thay cáp HDMI bị đứt",
+      "parts": "Cáp HDMI 2.0 2m",
+      "cost": 150000,
+      "startDate": "2024-01-12T14:00:00",
+      "endDate": "2024-01-12T15:00:00",
+      "status": "completed",
+      "notes": "Cáp cũ hư"
+    },
+    {
+      "id": 3,
+      "deviceId": 17,
+      "performedBy": "Nguyễn Văn IT",
+      "type": "maintenance",
+      "description": "Vệ sinh bụi và cập nhật driver",
+      "parts": "Keo tản nhiệt",
+      "cost": 200000,
+      "startDate": "2024-01-15T08:00:00",
+      "endDate": "2024-01-15T17:00:00",
+      "status": "completed",
+      "notes": "Bảo trì định kỳ"
+    },
+    {
+      "id": 4,
+      "deviceId": 2,
+      "performedBy": "",
+      "type": "repair",
+      "description": "Kiểm tra và sửa nguồn điện",
+      "parts": "",
+      "cost": 0,
+      "startDate": null,
+      "endDate": null,
+      "status": "pending",
+      "notes": "Chờ KTV"
+    },
+    {
+      "id": 5,
+      "deviceId": 12,
+      "performedBy": "Lê Văn Cường",
+      "type": "repair",
+      "description": "Thay cáp kết nối màn hình",
+      "parts": "Cáp DisplayPort",
+      "cost": 120000,
+      "startDate": "2024-01-16T10:00:00",
+      "endDate": null,
+      "status": "in-progress",
+      "notes": "Đang chờ linh kiện"
+    }
+  ],
+  "users": [
+    {
+      "name": "Admin Hệ thống",
+      "email": "admin@school.edu.vn",
+      "password": "admin123",
+      "role": "admin",
+      "phone": "0901234567",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "Lê Văn Cường",
+      "email": "it@school.edu.vn",
+      "password": "it123",
+      "role": "staff",
+      "phone": "0912345678"
+    },
+    {
+      "id": 3,
+      "name": "TS. Nguyễn Văn A",
+      "email": "teacher@school.edu.vn",
+      "password": "teacher123",
+      "role": "teacher",
+      "phone": "0923456789"
+    },
+    {
+      "id": 4,
+      "name": "Nguyễn Văn An",
+      "email": "student@school.edu.vn",
+      "password": "student123",
+      "role": "student",
+      "phone": "0934567890"
+    },
+    {
+      "name": "Hoàng Kiên",
+      "email": "kien123@gmail.com",
+      "password": "229811023",
+      "role": "student",
+      "active": true,
+      "id": 5
+    },
+    {
+      "name": "tuanb52",
+      "email": "tuan123@gmail.com",
+      "password": "229811023",
+      "role": "admin",
+      "phone": "",
+      "id": 6
+    }
+  ]
+}
